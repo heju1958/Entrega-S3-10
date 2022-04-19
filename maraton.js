@@ -1,19 +1,21 @@
 function positions(firstPlace, secondPlace, lastPlace) {
   array = [firstPlace, secondPlace, lastPlace];
 
-  if (firstPlace == "Daniel") {
-  } else if (secondPlace == "Daniel") {
+  if (secondPlace == "Daniel") {
     array[1] = firstPlace;
     array[0] = secondPlace;
-  } else lastPlace == "Daniel";
-  {
+  } 
+  else if (lastPlace == "Daniel") {
     array[1] = lastPlace;
+    array[2] = secondPlace
   }
 
-  return `1º Colocado ${array[0]}`;
+  console.log(`1º colocado ${array[0]}`)
+  console.log(`2º colocado ${array[1]}`)
+  console.log(`3º colocado ${array[2]}`)
 }
 
-console.log(positions("Daniel", "Monoel", "Rafael"));
+positions( "Monoel", "Rafael", "Daniel");
 
 //simplificado//
 
